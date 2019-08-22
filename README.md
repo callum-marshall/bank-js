@@ -1,6 +1,6 @@
 # Bank Tech Test
 
-Practicing my OOD and TDD skills in JS
+Practicing my OOD and TDD skills in ES6
 
 ## Specification
 
