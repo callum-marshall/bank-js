@@ -1,16 +1,20 @@
 class Account {
   constructor () {
     this.balance = 0
-    this.deposit_history = []
+    this.depositHistory = []
   }
 
   deposit (value) {
     this.balance += value
-    this.deposit_history.push(value)
+    this.depositHistory.push(value)
   }
 
   withdraw (value) {
     this.balance -= value
+  }
+
+  printDeposits () {
+    return this.depositHistory
   }
 }
 
