@@ -15,4 +15,10 @@ describe('Account', () => {
     account.deposit(200)
     expect(account.balance).toBe(200)
   })
+
+  test('user can make a withdrawal', () => {
+    account.deposit(200)
+    account.withdraw(50)
+    expect(account.balance).toBe(150)
+  })
 })
