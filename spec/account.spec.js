@@ -21,4 +21,10 @@ describe('Account', () => {
     account.withdraw(50)
     expect(account.balance).toBe(150)
   })
+
+  test('account stores deposits', () => {
+    account.deposit(10)
+    account.deposit(20)
+    expect(account.deposit_history).toEqual([10, 20])
+  })
 })
