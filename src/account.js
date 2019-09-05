@@ -6,7 +6,7 @@ class Account {
 
   deposit (value) {
     this.balance += value
-    this.depositHistory.push(value)
+    this.depositHistory.push({ credit: value })
   }
 
   withdraw (value) {
